@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Calcu</title>
+    </head>
+    <body>
+        <div id="content-container">
+            <h1>Calcu</h1>
+            <div id="calculator-container">
+                <input maxlength="99" id="input-box-a" />
+                <div id="oper-buttons">
+                    <div id="plus-button" class="oper-button-container" onclick="selectOperButton('#plus-button')">
+                        <img class="oper-button-content" src="assets/plus.png" />
+                    </div>
+                    <div id="minus-button" class="oper-button-container" onclick="selectOperButton('#minus-button')">
+                        <img class="oper-button-content" src="assets/minus.png" />
+                    </div>
+                    <div id="multiply-button" class="oper-button-container" onclick="selectOperButton('#multiply-button')">
+                        <img class="oper-button-content" src="assets/multiply.png" />
+                    </div>
+                    <div id="divide-button" class="oper-button-container" onclick="selectOperButton('#divide-button')">
+                        <img class="oper-button-content" src="assets/divide.png" />
+                    </div>
+                </div>
+                <input maxlength="99" id="input-box-b" />
+                <div id="output-display"><p id="output-display-content">0</p></div>
+                <button id="calc-button" onclick="calc()">CALC</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
