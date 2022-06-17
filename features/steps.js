@@ -1,4 +1,4 @@
-const { When, Then, Given, AfterAll } = require("cucumber");
+const { When, Then, Given, AfterAll } = require("@cucumber/cucumber");
 const { Builder, Capabilities, By } = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
 require("chai").should();
