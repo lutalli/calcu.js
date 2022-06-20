@@ -1,0 +1,52 @@
+input {
+    font-family: "Monaco", "Ubuntu Mono", "DejaVu Sans Mono", monospace;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+#calculator-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    grid-template-areas: 
+        "input-box-a output-display"
+        "oper-checkbox-panel ."
+        "input-box-b calc-button";
+}
+
+#input-box-a {
+    grid-area: input-box-a;
+}
+
+#input-box-b {
+    grid-area: input-box-b;
+}
+
+#output-display {
+    grid-area: output-display;
+    width: 50%;
+}
+
+#calc-button {
+    grid-area: calc-button;
+}
+
+#output-display {
+    width: auto;
+}
+
+#output-display-content {
+    font-size: 24px;
+    font-family: "Monaco", "Ubuntu Mono", "DejaVu Sans Mono", monospace;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

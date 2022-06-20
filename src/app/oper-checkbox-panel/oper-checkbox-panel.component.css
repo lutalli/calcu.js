@@ -1,0 +1,36 @@
+#oper-checkbox-panel {
+    grid-area: oper-checkbox-panel;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 0px 50px;
+}
+
+.oper-checkbox-img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    user-select: none;
+    -webkit-user-drag: none;
+    display: block;
+}
+
+.oper-checkbox-container {
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+}
+
+.oper-checkbox-container:not(.selected-oper-checkbox) {
+    transition: border 0.4s;
+}
+
+.oper-checkbox-container:hover:not(.selected-oper-checkbox) {
+    border: 2px solid #999;
+}
+
+.selected-oper-checkbox {
+    border: 2px solid #444;
+}

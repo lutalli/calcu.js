@@ -1,0 +1,7 @@
+<div id="calculator-container">
+    <input #inputBoxA maxlength="99" id="input-box-a" />
+    <app-oper-checkbox-panel (operChangeEvent)="changeSelectedOper($event)"></app-oper-checkbox-panel>
+    <input #inputBoxB maxlength="99" id="input-box-b" />
+    <div id="output-display"><p #outputDisplayContent id="output-display-content">0</p></div>
+    <button id="calc-button" (click)="calc()">CALC</button>
+</div>
